@@ -1,4 +1,4 @@
-# Angular firebase authentication with local storage
+# Angularfire auth with local storage
 
 ## Steps for create project
 
