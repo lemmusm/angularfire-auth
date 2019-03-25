@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <div class="row mt-5">
+    <div class="col-md-12 text-center">
+      <h2>Data from service authentication</h2>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+    <div class="card" style="width: 20rem;">
+      <img
+        class="card-img-top"
+        src="{{ user.photoURL }}"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">
+          <strong>{{ user.displayName }}</strong>
+        </h5>
+        <p class="card-text">{{ user.email }}</p>
+        <p class="card-text"><strong>UID:</strong> {{ user.uid }}</p>
+        <a href="#" class="btn btn-danger" (click)="logout()">
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
